@@ -1,18 +1,24 @@
+body, html {
+    height: 100%; /* Ensure body and html take up the full height */
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+
 #centered-box {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh; /* Full viewport height */
     background-color: lightblue;
+    flex: 1; /* This makes the box take up all available space */
     text-align: center;
 }
 
-body {
-    margin: 0;
-    padding: 0;
-    font-family: Arial, sans-serif; /* Optional styling for the whole page */
+h1 {
+    margin: 0; /* Remove default margin for the <h1> */
 }
 
-h3 {
-    text-align: center; /* Center the text of all <h3> elements */
+.additional-content {
+    text-align: center;
+    padding: 20px;
 }
