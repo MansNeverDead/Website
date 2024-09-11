@@ -2,12 +2,32 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    height: 30vh; /* Adjust the height to fit your design */
     background-color: lightblue;
-    flex: 1; /* This makes the box take up all available space */
-    text-align: center;
 }
 
 .center-items {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.buttons-entry button {
+    margin: 10px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:disabled {
+    background-color: gray;
+    cursor: not-allowed;
+}
+
+#message {
+    margin-top: 20px;
+    font-size: 18px;
+    color: darkred;
     text-align: center;
-    padding: 20px;
 }
