@@ -3,7 +3,7 @@ function buttonPressed(button) {
     button.disabled = true;
     
     // Find the paragraph and change its content
-    const messageParagraph = document.getElementById('message');
+    let messageParagraph = document.getElementById('message');
     messageParagraph.textContent = 'Button has been pressed, please wait!';
     console.log("button has been pressed");
 }
