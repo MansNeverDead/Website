@@ -1,3 +1,5 @@
+import $ from 'jquery';
+
 function buttonPressed(button) {
     // Disable the clicked button
     button.disabled = true;
