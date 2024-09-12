@@ -1,16 +1,7 @@
-import $ from 'https://code.jquery.com/jquery-3.6.0.min.js';
+function buttonHasBeenPressed(buttonId, paragraphId, word) {
+    const message = document.getElementById(paragraphId)
+    document.getElementById(buttonId).addEventListener("click", function(){
+         message.textContent = word; });
+};
 
-function buttonPressed(button) {
-    // Disable the clicked button
-    button.disabled = true;
-    
-    // Find the paragraph and change its content
-    let messageParagraph = document.getElementById('message');
-    messageParagraph.textContent = 'Button has been pressed, please wait!';
-    console.log("button has been pressed");
-}
-
-$('#buttons-entry').on('click', 'button', function(event) {
-    // Pass the clicked button to the buttonPressed function
-    buttonPressed(event.currentTarget);
-});
+buttonHasBeenPressed('button', 'message', "Vous avez appuyez sur le bouton, veillez patienter s'il vous plaît")
