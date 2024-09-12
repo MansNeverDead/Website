@@ -8,6 +8,7 @@ function buttonPressed(button) {
     console.log("button has been pressed");
 }
 
-$('#buttons-entry').on('click', event => {
-    buttonPressed(event.currentTarget)
-  });
+$('#buttons-entry').on('click', 'button', function(event) {
+    // Pass the clicked button to the buttonPressed function
+    buttonPressed(event.currentTarget);
+});
