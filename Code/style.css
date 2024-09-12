@@ -24,10 +24,3 @@ button:disabled {
     background-color: gray;
     cursor: not-allowed;
 }
-
-#message {
-    margin-top: 20px;
-    font-size: 18px;
-    color: darkred;
-    text-align: center;
-}
