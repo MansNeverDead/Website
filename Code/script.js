@@ -7,3 +7,7 @@ function buttonPressed(button) {
     messageParagraph.textContent = 'Button has been pressed, please wait!';
     console.log("button has been pressed");
 }
+
+$('#buttons-entry').on('click', event => {
+    buttonPressed(event.currentTarget)
+  });
