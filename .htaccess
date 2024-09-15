@@ -1,0 +1,7 @@
+RewriteEngine On
+RewriteBase /
+
+# Rewrite rule for files in "Different Pages" folder without .html extension
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^([^/]+)/?$ /Different\ Pages/$1.html [L]
