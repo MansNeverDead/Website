@@ -1,7 +1,5 @@
-function buttonHasBeenPressed(buttonId, paragraphId, word) {
-    const message = document.getElementById(paragraphId)
-    document.getElementById(buttonId).addEventListener("click", function(){
-         message.textContent = word; });
-};
-
-buttonHasBeenPressed('button', 'message', "Vous avez appuyez sur le bouton, veillez patienter s'il vous plaît")
+const params = new URLSearchParams(window.location.search);
+const page = params.get('page');
+if (page === 'blog') {
+    window.location.href = 'Different Pages/blogpostPage.html';
+}

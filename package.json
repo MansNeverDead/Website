@@ -11,6 +11,7 @@
   "license": "ISC",
   "dependencies": {
     "javascript": "^1.0.0",
-    "jquery": "^3.7.1"
+    "jquery": "^3.7.1",
+    "php": "^1.1.0"
   }
 }
