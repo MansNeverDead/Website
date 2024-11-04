@@ -7,15 +7,15 @@ const links = [
 ];
 
 function updateLink() {
-    const startDate = new Date("2024-01-01T00:00:00-03:00"); // French Guiana is UTC-3
+    const startDate = new Date("2024-11-04T00:00:00-03:00"); // French Guiana is UTC-3
 
     const currentDate = new Date(new Date().toLocaleString("en-US", { timeZone: "America/Cayenne" }));
 
     const daysSinceStart = Math.floor((currentDate - startDate) / (1000 * 60 * 60 * 24));
 
     const link = links[daysSinceStart % links.length];
-
-    document.getElementById("daily-link").href = link;
+    var e = document.getElementById("daily-link").href
+    e = link;
 }
 
 updateLink();
