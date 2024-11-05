@@ -20,7 +20,7 @@ function updateLink() {
     const link = links[daysSinceStart % links.length];
     
     // Return or log the link instead of updating a DOM element
-    console.log("Today's link lol: ", link);
+    console.log("Today's link lol:", link);
 }
 
 // Call the function
