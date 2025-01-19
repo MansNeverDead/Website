@@ -25,4 +25,4 @@ function updateLink() {
 }
 
 // Call the function
-//updateLink();
+updateLink();
