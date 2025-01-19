@@ -8,7 +8,7 @@ const links = [
 
 function updateLink() {
     // Define start date for rotation
-    const startDate = new Date("2025-01-20T00:00:00-03:00");
+    const startDate = new Date("2025-01-19T00:00:00-03:00");
 
     // Get the current date adjusted for French Guiana's timezone
     const currentDate = new Date(new Date().toLocaleString("en-US", { timeZone: "America/Cayenne" }));
