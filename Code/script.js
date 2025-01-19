@@ -20,7 +20,7 @@ function updateLink() {
     const targetURL = links[daysSinceStart % links.length];
 
     // Redirect to the target URL
-    window.location.href = targetURL;
+    window.location.replace = targetURL;
 
 }
 
