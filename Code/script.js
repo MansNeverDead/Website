@@ -21,7 +21,8 @@ function updateLink() {
 
     // Redirect to the target URL
     window.location.href = targetURL;
+
 }
 
 // Call the function
-updateLink();
+//updateLink();
